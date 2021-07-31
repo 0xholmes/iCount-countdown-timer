@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCount</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="text-white h-screen bg-galaxy bg-cover">
+    <!-- Header -->
+    <header class="p-4 text-md ml-2 md:ml-4">
+            iTimer
+    </header>
+
+    <div class="my-28">
+        <!-- Text/Heading -->
+        <section class="flex flex-col justify-center text-center">
+            <h1 class="text-5xl md:text-7xl mb-4">iCount</h1>
+            <p class="text-blue-400 w-11/12 md:w-full mx-auto">We're counting to New Year <span id="next-year"></span>, fuck Covid.</p>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section class="grid grid-cols-2 md:flex justify-center flex-wrap gap-12 p-16">
+            <div>
+                <h1 id="days" class="text-6xl flex justify-center">153</h1>
+                <p class="flex justify-center">Days</p>
+            </div>
+            <div>
+                <h1 id="hours" class="text-6xl flex justify-center">15</h1>
+                <p class="flex justify-center">Hours</p>
+            </div>
+            <div>
+                <h1 id="minutes" class="text-6xl flex justify-center">40</h1>
+                <p class="flex justify-center">Minutes</p>
+            </div>
+            <div>
+                <h1 id="seconds" class="text-6xl flex justify-center">54</h1>
+                <p class="flex justify-center">Seconds</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
