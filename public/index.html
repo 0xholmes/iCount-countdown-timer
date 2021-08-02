@@ -14,7 +14,8 @@
             iTimer
     </header>
 
-    <div class="mt-20">
+    <!-- Main -->
+    <main class="mt-20">
         <!-- Text/Heading -->
         <section class="flex flex-col justify-center text-center">
             <h1 class="text-5xl md:text-7xl mb-4">iCount</h1>
@@ -22,7 +23,7 @@
         </section>
 
         <!-- Countdown Timer -->
-        <section class="grid grid-cols-2 md:flex justify-center flex-wrap gap-12 p-16">
+        <section class="grid grid-cols-2 md:flex justify-center flex-wrap gap-12 p-16 mb-4">
             <div>
                 <h1 id="days" class="text-6xl flex justify-center">153</h1>
                 <p class="flex justify-center">Days</p>
@@ -40,6 +41,11 @@
                 <p class="flex justify-center">Seconds</p>
             </div>
         </section>
-    </div>
+
+        <!-- Quote -->
+        <section class="flex flex-col justify-center text-center">
+            <p id="quote" class="w-11/12 md:w-full mx-auto"></p>
+        </section>
+    </main>
 </body>
 </html>
