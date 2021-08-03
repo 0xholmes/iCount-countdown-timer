@@ -21,7 +21,38 @@ function countdownTimer() {
   const minutes = Math.floor((totalSeconds / 60) % 60)
   const seconds = Math.floor(totalSeconds % 60)
 
-  // TODO: Change days/hours/minutes/seconds to day/hour/minute/second when the value is equal to one
+  // Change days/hours/minutes/seconds to day/hour/minute/second when the value is equal to one
+  function classifier() {
+    switch (days) {
+      case 1:
+        document.getElementById("d").innerText = "day"
+        break
+      default:
+        document.getElementById("d").innerText = "days"
+    }
+    switch (hours) {
+      case 1:
+        document.getElementById("h").innerText = "hour"
+        break
+      default:
+        document.getElementById("h").innerText = "hours"
+    }
+    switch (minutes) {
+      case 1:
+        document.getElementById("m").innerText = "minute"
+        break
+      default:
+        document.getElementById("m").innerText = "minutes"
+    }
+    switch (seconds) {
+      case 1:
+        document.getElementById("s").innerText = "second"
+        break
+      default:
+        document.getElementById("s").innerText = "seconds"
+    }
+  }
+  classifier()
 
   // Display to HTML/web page
   function render() {
